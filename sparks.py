@@ -2,9 +2,9 @@ import pygame
 import sys
 
 class Hero(pygame.sprite.Sprite):
-    # 主角类
-    def __init__(self, x, y, weapon = 'energy', ooze = False, life=3, energy = 5):
-        self.max_life = life
+	# 主角类
+	def __init__(self, x, y, weapon = 'energy', ooze = False, life=3, energy = 5):
+		self.max_life = life
 		self.life = life
 		self.hurt = 0
 		self.max_energy = energy
@@ -25,11 +25,11 @@ class Hero(pygame.sprite.Sprite):
 		self.y = float(y)  # x，y就是专门给rect.x弄成小数形式的
 		self.init_weapon(weapon)
 
-    def check_event(self, event):
+	def check_event(self, event):
 		'''响应键盘'''
 		#包括基础运动方式：向左滚动，向右滚动，跳跃，控制平动（？）'''
-        pass
-    
+		pass
+	
 	def current_shape(self):
 		'''返回当前形状和角度'''
 		pass
@@ -230,6 +230,7 @@ class React():
 class Bullet(React):
 	'''子弹'''
 	def __init__(self, x, y, x_bullet, y_bullet, speed = 10, near = 20, if_enemy = False):
+		pass
 
 class Ghost(React):
 	'''大鬼，会追着主角跑，主角可以杀死'''
